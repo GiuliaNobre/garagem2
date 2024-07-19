@@ -9,7 +9,7 @@ export default class VeiculosApi {
     return data.results;
   }
   async atualizarVeiculo(veiculo) {
-    const { data } = await axios.put(`/veiculo/${veiculo.id}/`, veiculo);
+    const { data } = await axios.put(`/veiculos/${veiculo.id}/`, veiculo);
     return data.results;
   }
   async excluirVeiculo(id) {

@@ -9,6 +9,7 @@ const authStore = useAuthStore();
 
 <template>
   <header>
+    <nav>
     <router-link :to="{ name: 'home' }">Home</router-link> |
     <router-link to="/acessorios">Acessorios</router-link> |
     <router-link to="/categorias">Categorias</router-link> |
@@ -21,8 +22,11 @@ const authStore = useAuthStore();
       {{ authStore.user.email }}
     </div>
     <router-link v-else to="/login">Login</router-link>
+  </nav>
   </header>
   <main>
     <RouterView />
   </main>
 </template>
+<style scoped>
+</style>
