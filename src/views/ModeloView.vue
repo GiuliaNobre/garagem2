@@ -43,7 +43,7 @@ async function excluir(id) {
     <input type="text" v-model="modelo.nome" placeholder="Nome" />
     
     <select v-model="modelo.marca"  >
-      <option v-for="modelo in modelos" :key="modelo.id" value=""></option> placeholder="Marca"
+      <option value=""></option> placeholder="Marca"
     </select>
 
     <button @click="salvar">Salvar</button>
